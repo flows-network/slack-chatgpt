@@ -20,6 +20,7 @@ pub fn run() {
         set("prompt", json!(prompt));
         let cr = CompletionRequest {
             prompt: prompt,
+            n: 1,
             max_tokens: 2048,
             ..Default::default()
         };
