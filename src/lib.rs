@@ -6,8 +6,8 @@ use serde_json::json;
 #[no_mangle]
 pub fn run() {
     listen_to_channel("secondstate", "collaborative-chat", |sm| {
-        let prompt = get("prompt").unwrap();
-        let prompt = prompt.as_str().unwrap();
+        let prompt = get("prompt").unwrap_or_default();
+        let prompt = prompt.as_str().unwrap_or_default();
         if prompt.len() == 0 {
             send_message_to_channel("secondstate", "collaborative-chat", "Starting a new conversation since the last interaction was over 5 minutes ago".to_owned());
         }
