@@ -31,7 +31,7 @@ Fork [this repo](https://github.com/flows-network/collaborative-chat) and go to 
 
 
 6. Name your flow, and click on "Turn on and Save" button to deploy the flow function.
-<img width="619" alt="image" src="https://user-images.githubusercontent.com/45785633/222972788-68331a34-210d-4184-84b9-aff9bd5d88b2.png">
+
 
 ### Configure SaaS integrations
 
