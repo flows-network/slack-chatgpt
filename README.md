@@ -48,7 +48,7 @@ That's all. As soon as the flow function's status becomes `ready`, the ChatGPT S
 
 > [flows.network](https://flows.network/) is still in its early stages. We would love to hear your feedback!
 
-## others
+## Others
 
 If you want to build locally, make sure you have installed Rust and added `wasm32-wasi` traget.
 
