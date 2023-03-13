@@ -1,6 +1,6 @@
 # A general ChatGPT bot for your slack channel
 
-Deploy this function on flows.network, and you will get a Slack bot that uses ChatGPT to respond to every question in your Slack workspace automatically.
+[Deploy this function on flows.network](#deploy-chatgpt-slack-bot-on-your-slack-channel), and you will get a Slack bot that uses ChatGPT to respond to every question in your Slack workspace automatically.
 
 <img width="734" alt="image" src="https://user-images.githubusercontent.com/45785633/224654183-a7ab4dd1-8a85-4304-a68f-c208fbfd50e2.png">
 (See an example)
@@ -9,9 +9,9 @@ Deploy this function on flows.network, and you will get a Slack bot that uses Ch
 
 You will need an [OpenAI API key](https://openai.com/blog/openai-api). If you do not already have one, [sign up here](https://platform.openai.com/signup).
 
-## Deploy ChatGPT GitHub App on your GitHub repo
+## Deploy ChatGPT Slack bot on your Slack Channel
 
-To install the ChatGPT GitHub App, we will use [flows.network](https://flows.network/), a serverless platform that makes deploying your own app quick and easy in just three steps.
+To install the ChatGPT Slack App, we will use [flows.network](https://flows.network/), a serverless platform that makes deploying your own app quick and easy in just three steps.
 
 ### Fork this repo
 
@@ -30,7 +30,6 @@ Fork [this repo](https://github.com/flows-network/collaborative-chat) and go to 
 <img width="688" alt="image" src="https://user-images.githubusercontent.com/45785633/224656401-2a554e1b-8960-4995-ba69-f4e0637d0c63.png">
 
 
-
 6. Name your flow, and click on "Turn on and Save" button to deploy the flow function.
 <img width="619" alt="image" src="https://user-images.githubusercontent.com/45785633/222972788-68331a34-210d-4184-84b9-aff9bd5d88b2.png">
 
@@ -43,10 +42,9 @@ After that, the flows.network will redirect you to the flow details page automat
 
 <img width="758" alt="image" src="https://user-images.githubusercontent.com/45785633/222973214-ecd052dc-72c2-4711-90ec-db1ec9d5f24e.png">
 
-2. Click the "Connect" button to authenticate your GitHub account. You'll be redirected to a new page where you must grant [flows.network](https://flows.network/) permission to install the `flows-network-integration` bot on a repo. This repo is the one you entered into the environment variables above.
+2. Click the "Connect" button to authenticate your Slack account. You'll be redirected to a new page where you must grant [flows.network](https://flows.network/) permission to install the `flows-network-integration` bot on a Slack worksapce. This workspace is the one you entered into the environment variables above.
 
-
-That's all. As soon as the flow function's status becomes `ready`, the ChatGPT GitHub App goes live. Go ahead and chat with ChatGPT by creating an issue!
+That's all. As soon as the flow function's status becomes `ready`, the ChatGPT Slack App goes live. Go ahead and chat with ChatGPT by sending a message in the channel!
 
 > [flows.network](https://flows.network/) is still in its early stages. We would love to hear your feedback!
 
