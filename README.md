@@ -15,14 +15,14 @@ To install the ChatGPT Slack App, we will use [flows.network](https://flows.netw
 
 ### Fork this repo
 
-Fork [this repo](https://github.com/flows-network/collaborative-chat) and go to flows.network to deploy your function. 
+Fork [this repo](https://github.com/flows-network/slack-chatgpt) and go to flows.network to deploy your function. 
 
 ### Deploy the code on flow.network
 
 1. Sign up for an account for deploying flows on [flows.network](https://flows.network/). It's free.
 2. Click on the "Get Started" button and go to a new page, "My flows".
 3. Click on the "Create a Flow" button to start deploying the ChatGPT Slack bot.
-4. Authenticate the [flows.network](https://flows.network/) to access the `collaborative-chat` repo you just forked. Don't forget to choose "With Environment Variables", which we will configure the required parameters. Once done, click on the "Next" button.
+4. Authenticate the [flows.network](https://flows.network/) to access the `slack-chatgpt` repo you just forked. Don't forget to choose "With Environment Variables", which we will configure the required parameters. Once done, click on the "Next" button.
 <img width="779" alt="image" src="https://user-images.githubusercontent.com/45785633/224656121-98d146ae-8bab-40b1-a589-057a34572884.png">
 
 5. Fill in the required Environment Variables. In this example, we have three variables. One is `workspace`. Fill in the Slack workspace Name you want to connect here. The second one is `channel`. Fill in the Slack channel under the Slack workspace you just entered. The last one is `openai_key_name`. Fill in the name you want to name your OpenAI Key.
