@@ -6,12 +6,12 @@ use dotenv::dotenv;
 #[no_mangle]
 pub fn run() {
     dotenv().ok();
-    let workspace: String = match env::var("workspace") {
+    let workspace: String = match env::var("slack_workspace") {
         Err(_) => "secondstate".to_string(),
         Ok(name) => name,
     };
 
-    let channel: String = match env::var("channel") {
+    let channel: String = match env::var("slack_channel") {
         Err(_) => "collaborative-chat".to_string(),
         Ok(name) => name,
     };
