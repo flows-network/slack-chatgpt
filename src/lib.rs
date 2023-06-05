@@ -1,10 +1,14 @@
-use slack_flows::{listen_to_channel, send_message_to_channel};
-use openai_flows::{chat_completion, ChatOptions};
-use std::env;
 use dotenv::dotenv;
+use openai_flows::{
+    chat::{ChatModel, ChatOptions},
+    OpenAIFlows,
+};
+use slack_flows::{listen_to_channel, send_message_to_channel, SlackMessage};
+use std::env;
 
 #[no_mangle]
-pub fn run() {
+#[tokio::main(flavor = "current_thread")]
+pub async fn run() {
     dotenv().ok();
     let workspace: String = match env::var("slack_workspace") {
         Err(_) => "secondstate".to_string(),
@@ -15,19 +19,20 @@ pub fn run() {
         Err(_) => "collaborative-chat".to_string(),
         Ok(name) => name,
     };
-    let openai_key_name: String = match env::var("openai_key_name") {
-        Err(_) => "chatmichael".to_string(),
-        Ok(name) => name,
-    };
 
-    listen_to_channel(&workspace, &channel, |sm| {
-        let chat_id = workspace.clone() + &channel;
-        let c = chat_completion(&openai_key_name, &chat_id, &sm.text, &ChatOptions::default());
-        if let Some(c) = c {
-            if c.restarted {
-                send_message_to_channel(&workspace, &channel, "Let's start a new conversation!".to_string());
-            }
-            send_message_to_channel(&workspace, &channel, c.choice);
-        }
-    });
+    listen_to_channel(&workspace, &channel, |sm| handler(sm, &workspace, &channel)).await;
+}
+
+async fn handler(sm: SlackMessage, workspace: &str, channel: &str) {
+    let chat_id = workspace.to_string() + channel;
+    let co = ChatOptions {
+        model: ChatModel::GPT35Turbo,
+        restart: false,
+        system_prompt: None,
+    };
+    let of = OpenAIFlows::new();
+
+    if let Ok(c) = of.chat_completion(&chat_id, &sm.text, &co).await {
+        send_message_to_channel(&workspace, &channel, c.choice).await;
+    }
 }
