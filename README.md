@@ -10,11 +10,11 @@
 2. Authenticate your Slack
 3. Add your OpenAI API key
 
-## 0 Prerequisite 
+## 0 Prerequisites
 
-You will need to bring your own [OpenAI API key](https://openai.com/blog/openai-api). If you do not already have one, [sign up here](https://platform.openai.com/signup).
+1. You will need to bring your own [OpenAI API key](https://openai.com/blog/openai-api). If you do not already have one, [sign up here](https://platform.openai.com/signup).
 
-You will also need to sign into [flows.network](https://flows.network/) from your GitHub account. It is free.
+2. You will also need to sign up for [flows.network](https://flows.network/) with your GitHub account. It is free.
 
 ## 1 Create a bot from a template
 
@@ -35,7 +35,7 @@ Click on the **Create and Build** button.
 
 ## 3 Add your OpenAI API key
 
-Click the "Connect" button to authenticate your OpenAI account. You'll be redirected to a new page where you could copy and paste your OpenAI API key. 
+Click the "Connect" button to authenticate your OpenAI account. You'll be redirected to a new page where you can copy and paste your OpenAI API key. 
 
 [<img width="450" alt="image" src="https://user-images.githubusercontent.com/45785633/222973214-ecd052dc-72c2-4711-90ec-db1ec9d5f24e.png">](https://user-images.githubusercontent.com/45785633/222973214-ecd052dc-72c2-4711-90ec-db1ec9d5f24e.png)
 
@@ -66,7 +66,7 @@ You can [mannually create a new flow](https://flows.network/flow/new) and import
 
 You can repeat this for all target slack channels you would like to deploy this bot in.
 
-> You could have a single flow function repo deployed as the source code for multiple bots. When you update the source code in the repo, and push it to GitHub, it will change the behavior of all the bots.
+> You can have a single flow function repo deployed as the source code for multiple bots. When you update the source code in the repo, and push it to GitHub, it will change the behavior of all the bots.
 
 > [flows.network](https://flows.network/) is still in its early stages. We would love to hear your feedback!
 
