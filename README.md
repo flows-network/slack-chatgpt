@@ -70,7 +70,7 @@ The flows.network platform will automatically detect and rebuild the bot from yo
 
 ### Use the bot on multiple repos
 
-You can [mannually create a new flow](https://flows.network/flow/new) and import the source code repo for the bot (i.e., the repo you cloned from the template). Choose a repo and click **Build**.
+You can [manually create a new flow](https://flows.network/flow/new) and import the source code repo for the bot (i.e., the repo you cloned from the template). Choose a repo and click **Build**.
 <img width="1169" alt="image" src="https://github.com/flows-network/slack-chatgpt/assets/37167103/c9a16a47-e614-48b2-b66a-64d29af0a529">
 
 <img width="879" alt="image" src="https://github.com/flows-network/slack-chatgpt/assets/37167103/8436d1bb-b47e-4b4b-bb9c-ea38dc8ff5fc">
