@@ -70,12 +70,20 @@ The flows.network platform will automatically detect and rebuild the bot from yo
 
 ### Use the bot on multiple repos
 
-You can [manually create a new flow](https://flows.network/flow/new) and import the source code repo for the bot (i.e., the repo you cloned from the template). Choose a repo and click **Build**.
-<img width="1169" alt="image" src="https://github.com/flows-network/slack-chatgpt/assets/37167103/c9a16a47-e614-48b2-b66a-64d29af0a529">
+You can [manually create a new flow](https://flows.network/flow/new) and import the source code repo for the bot (i.e., the repo you cloned from the template). 
 
-<img width="879" alt="image" src="https://github.com/flows-network/slack-chatgpt/assets/37167103/8436d1bb-b47e-4b4b-bb9c-ea38dc8ff5fc">
+<img width="1125" alt="image" src="https://github.com/flows-network/slack-chatgpt/assets/37167103/0be8666b-cfb6-4921-bb63-883b9a99e289">
+Choose a template repo and enter the `slack_channel` and `slack_workspace` to point to the target slack channel you need to deploy the bot in.
+<img width="1138" alt="image" src="https://github.com/flows-network/slack-chatgpt/assets/37167103/cb9aadbb-5849-4889-bcc5-1f8dc8376a37">
 
-Then, you can use the flow config to specify the `slack_channel` and `slack_workspace` to point to the target slack channel you need to deploy the bot in. Authorize access and click **Deploy**.
+Click **Build**.
+
+<img width="1069" alt="image" src="https://github.com/flows-network/slack-chatgpt/assets/37167103/b8c32f02-5ead-4344-95fc-a3d09f0da0b1">
+
+You have already authorized the access to your Slack. Click **Continue**.
+<img width="1146" alt="image" src="https://github.com/flows-network/slack-chatgpt/assets/37167103/5c713980-fe60-4e9b-be2b-ca96977c2d6b">
+
+You have already entered your OpenAI key before. click **Deploy**.
 
 You can repeat this for all target slack channels you would like to deploy this bot in.
 
