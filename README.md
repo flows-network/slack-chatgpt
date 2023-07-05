@@ -1,4 +1,4 @@
-# A general ChatGPT bot for your slack channel
+# A General ChatGPT Bot for Your Slack Channel(s)
 
 [Deploy this function on flows.network](#deploy-chatgpt-slack-bot-on-your-slack-channel), and you will get a Slack bot that uses ChatGPT to respond to every question in your Slack workspace automatically. Below is an example:
 
@@ -68,7 +68,7 @@ By default, the bot uses GPT3.5. If your OpenAI API key has access to GPT4, you 
 in your cloned source code repo, and change `GPT35Turbo` to `GPT4` in the source code. Commit and push the change back to GitHub.
 The flows.network platform will automatically detect and rebuild the bot from your updated source code.
 
-### Use the bot on multiple repos
+### Deploy the bot on different Slack channels
 
 You can [manually create a new flow](https://flows.network/flow/new) and import the source code repo for the bot (i.e., the repo you cloned from the template). 
 
