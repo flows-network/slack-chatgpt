@@ -26,12 +26,20 @@ Click on the **Create and Build** button.
 
 <img width="943" alt="image" src="https://github.com/flows-network/slack-chatgpt/assets/37167103/40eae6d2-76ed-4fb9-825e-e5286003f4c2">
 
-### 2 Authenticate the Slack integration
+### 2 Authenticate the bot to access Slack
 
- Click the "Connect" button to authenticate your Slack account. You'll be redirected to a new page where you must grant [flows.network](https://flows.network/) permission to install the `flows-network-integration` bot on a Slack worksapce. This workspace is the one you entered into the environment variables above.
+Click the "+ Authenticate" button to authorize your Slack account. You'll enter which Slack channel you want your bot to be deployed in.
 
  * `slack_channel`: Slack channel where you want to deploy the bot. Case sensitive.
  * `slack_workspace`: Slack organization of the Slack channel where you want to deploy the bot. Case sensitive.
+
+Enter your Slack workspace and channel respectively in the red boxes below.
+![image](https://github.com/flows-network/github-star-slack-messenger/assets/45785633/0d9ac244-f327-4366-972c-47ef05472057)
+
+
+Next, let's grant flows.network to access the Slack channel you just entered. The Slack channel must be public.
+
+Click the "Connect/+ Add new authentication" button to authenticate your Slack account. You'll be redirected to a new page where you must grant [flows.network](https://flows.network/) permission to install the `flows-network` bot on your workspace. This workspace is the one you entered into the `slack_workspace` above.
 
 ### 3 Add your OpenAI API key
 
