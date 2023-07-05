@@ -12,3 +12,5 @@ slack-flows = "0.3"
 openai-flows = "0.7"
 dotenv = "0.15.0"
 tokio_wasi = { version = "1.25.0", features = ["rt", "macros"] }
+flowsnet-platform-sdk = "0.1"
+log = "0.4"
