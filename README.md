@@ -28,7 +28,10 @@ Click on the **Create and Build** button.
 
 ### 2 Authenticate the bot to access Slack
 
-Click the "+ Authenticate" button to authorize your Slack account. You'll enter which Slack channel you want your bot to be deployed in.
+Click the "+ Authenticate" button to authorize your Slack account. 
+<img width="1409" alt="image" src="https://github.com/flows-network/slack-chatgpt/assets/37167103/60c944c1-ccaa-4582-8727-5d5d1bde7958">
+
+You'll enter which Slack channel you want your bot to be deployed in.
 
  * `slack_channel`: Slack channel where you want to deploy the bot. Case sensitive.
  * `slack_workspace`: Slack organization of the Slack channel where you want to deploy the bot. Case sensitive.
